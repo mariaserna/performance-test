@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content, react/prop-types */
 import React from 'react';
+import Image from './Image';
 
 const HealthCard = ({
   title,
@@ -18,11 +19,12 @@ const HealthCard = ({
               position: 'relative',
             }}
           >
-            <img
+            <Image
               alt="Nothing to sneeze at. Get relief from seasonal allergies with Zyrtec, Flonase, and more."
-              aria-hidden="true"
-              src={image}
+              ariaHidden
               className="TempoCategoryTile-img"
+              sizes={[450]}
+              imageUrl={image}
               style={{
                 position: 'absolute',
                 width: '100%',
